@@ -1,12 +1,15 @@
 const int numButtons = 6; // Количество кнопок
-const int buttonPins[] = {2, 3, 4, 5, 6, 7}; // Пины кнопок
+const int buttonPins[] = {2, 3, 4, 5, 6, 7, 8, 9, 10}; // Пины кнопок
 const char* commands[] = {
-  "PLAY",    // Play/Pause (K)
-  "NEXT",    // Следующий трек (N)
-  "PREV",    // Предыдущий трек (P)
-  "VOLUP",   // Громкость +
-  "VOLDOWN", // Громкость -
-  "MUTE"     // Mute
+  "KEY-9",
+  "KEY-8",
+  "KEY-7",
+  "KEY-6",
+  "KEY-5",
+  "KEY-4",
+  "KEY-3",
+  "KEY-2",
+  "KEY-1"
 };
 
 int lastButtonStates[] = {HIGH, HIGH, HIGH, HIGH, HIGH, HIGH};

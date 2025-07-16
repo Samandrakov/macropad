@@ -5,7 +5,6 @@ import win32process
 import time
 import logging
 import serial
-from ctypes import windll
 import psutil
 
 logging.basicConfig(
@@ -22,12 +21,15 @@ FILENAME = 'yaamp.exe'
 TARGET_CLASS = 'Chrome_WidgetWin_1' #Класс приложения
 #Команды на вход с ардуино
 COMMAND_ACTIONS = {
-    "PLAY": 0x43,  # C key
-    "NEXT": 0x4E,  # N key
-    "PREV": 0x50,  # P key
-    "VOLUP": 0xAF,  # Volume Up
-    "VOLDOWN": 0xAE,  # Volume Down
-    "MUTE": 0xAD  # Volume Mute
+    "KEY-9": 0x43,  # C key
+    "KEY-8": 0x42,  # B key
+    "KEY-7": 0x5A,  # Z key
+    "KEY-6": 0xAF,  # Volume Up
+    "KEY-5": 0xAE,  # Volume Down
+    "KEY-4": 0xAD,  # Volume Mute
+    "KEY-3": None  # Volume Mute
+    "KEY-2": None  # Volume Mute
+    "KEY-1": None  # Volume Mute
 }
 
 def find_and_maximize_window():
