@@ -61,3 +61,8 @@ COMMAND_ACTIONS = {
 ```bash
 pyinstaller macropad_script.spec
 ```
+## TODO
+- [ ] Собрать базовый gui на PyQt5
+- [ ] Задать возможность бинда в gui
+- [ ] Задать возможность выбора окна-процесса из gui
+- [ ] Совместимость с linux
